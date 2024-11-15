@@ -13,3 +13,7 @@ function AjoutPart(nom, email) {
     document.getElementById("p").innerHTML += nom[i] + email[i];
   }
 }
+
+function Ajout(){
+  alert("arg")
+}
