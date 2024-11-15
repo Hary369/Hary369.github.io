@@ -1,5 +1,3 @@
-import "./styles.css";
-
 let nom = [];
 let email = [];
 
