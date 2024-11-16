@@ -14,6 +14,6 @@ function AjoutPart(nom, email) {
   }
 }
 
-function Ajout(){
+function test(){
   alert("arg")
 }
