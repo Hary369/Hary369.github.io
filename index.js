@@ -1,13 +1,13 @@
 var http = require("http");
 
 //create a server object:
-http
-  .createServer(function (req, res) {
-    res.write("Hello from CodeSandbox!"); //write a response to the client
-    envoyerMail("pti.baub@gmail.com");
-    res.end(); //end the response
-  })
-  .listen(8080); //the server object listens on port 8080
+server = http.createServer()
+server.on("request", function (req, res) {
+  envoyerMail("pti.baub@gmail.com");
+  res.write("Hello from CodeSandbox!"); //write a response to the client
+  res.end(); //end the response
+})
+server.listen(8080); //the server object listens on port 8080
 
 const nodemailer = require("nodemailer");
 
