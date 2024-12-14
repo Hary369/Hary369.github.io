@@ -6,7 +6,7 @@
   </head>
 
   <body>
-    <h1>Secret Santax</h1>
+    <h1>Secret Santa</h1>
     <form> <!action="/index.js" method="get">
     <div>
       <label for="say">Quelle salutation voulez-vous adresser&nbsp;?</label>
@@ -24,6 +24,14 @@
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "/index.js");
     xhr.send();
+    xhr.onload = () => {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    const data = xhr.response;
+    console.log(data);
+  } else {
+    console.log(`Error: ${xhr.status}`);
+  }
+};
   </script>
   </body>
 </html>
