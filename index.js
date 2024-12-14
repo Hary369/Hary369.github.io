@@ -23,9 +23,9 @@ function envoyerMail(email) {
   const mailOptions = {
     from: "noel.secret.santaclaus@gmail.com",
     to: email,
-    subject: "1 seul cadeau de Noël par personne",
+    subject: "gitgit",
     text: "Noël",
-    html: "argh",
+    html: "<p>argh</p>",
       };
 
   transporter.sendMail(mailOptions, function (error, info) {
